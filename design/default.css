@@ -1,0 +1,286 @@
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background-repeat:no-repeat;
+	background-position:50% 0%;
+	background-size: 1800px;
+}
+
+header {
+	margin: 20px auto 0 auto;
+	/**max-width: 59%;**/
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+footer {
+	text-align: center;
+	padding: 30px;
+	font-size: 0.9em;
+}
+
+h1 {
+	color: black;
+	font-family: 'road', 'arial';
+	font-weight: 500;
+	font-size: 70px;
+	margin: 0 auto 0 auto;
+	
+}
+
+h2 {
+	color: rgb(58, 58, 58);
+	font-family: 'helvetica','arial';
+	font-weight: 500;
+	font-size: 35px;
+	margin: auto;
+}
+
+h3 {
+	color: rgb(129, 126, 126);
+}
+
+button {
+	min-width: 22%;
+	cursor: pointer;
+	padding: auto;
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 100;
+	border: none;
+	border-radius: 6px;
+	background: #2a5bd7;
+	color: white;
+	box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+}
+
+button:hover {
+	background: #1b3987;
+}
+
+input[type=url] {
+	min-width: 72%;
+	height: 70px;
+	background: #fff;
+	border: 1px solid #d3d4d7;
+	border-radius: 8px;
+	display: inline-block;
+	margin: 0 20px;
+    font-size: 22px;
+    color: #36383b;
+    padding: 0 20px;
+}
+
+
+input[type=url]:focus {
+	outline: #1153b4 solid 2px;
+	border: -2px;
+	border-style: solid;
+}
+
+
+li {
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+li:hover {
+	font-weight: bold;
+}
+
+li > a {
+}
+
+/** ID **/
+
+#alertalready-href {
+	margin: 20px auto;
+	text-underline-offset: none;
+	color:#fff;
+}
+
+#alertsuccess-href {
+	margin: 20px auto;
+	text-underline-offset: none;
+	color:#fff;
+}
+
+#brands {
+	background-color: #eff7fc;
+	padding: 70px;
+	text-align: center;
+}
+
+#conditions {
+	text-align: center;
+	font-size: 17px;
+	color: #9ca1ad;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+#conditions > a {
+	color: #9ca1ad;
+}
+
+#description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+	margin: 5px auto 40px auto;
+}
+
+#formulaire {
+	display: flex;
+	justify-content: space-around;
+	/**max-width: 1170px;**/
+	padding: 0px 30px 0px 30px;
+	margin: 0px 30px;
+}
+
+#entete_left{
+	padding: 15px;
+	width: 75px;
+	height: 75PX;
+}
+  
+#entete_right > a >img{
+	margin-top: 20px;
+	padding: 15px 50px 15px 15px;
+	width: 75px;
+	height: 75PX;
+}
+
+#link {
+	margin-left: 20px;
+}
+
+#short {
+	min-width: 250px;
+	margin-right: 20px;
+}
+
+#img_home {
+	display: block;
+	height: 800px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#hello form {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#result {
+	font-family: 'helvetica';
+	background-color: #1495ac;
+	color: white;
+	font-weight: 500;
+	margin: 20px;
+	padding: 30px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+#second {
+	background-color: #0b1736 ;
+	margin: 100px auto 0px auto;
+	padding: 25px 0px 20px 0px;
+	/**max-width: 59%;**/
+}
+
+/**CLASS**/
+
+.alerterror {
+	color: red;
+	max-width: 600px;
+	padding: 20px 25px;
+	margin: 30px auto;
+	background-color: rgb(240, 218, 218);
+	border-radius: 6px;
+}
+
+.alertinvalid {
+	color: red;
+	max-width: 600px;
+	padding: 20px 25px;
+	margin: 30px auto;
+	background-color: rgb(240, 218, 218);
+	border-radius: 6px;
+}
+
+.alertsuccess {
+	text-align: center;
+	color: white;
+	max-width: 600px;
+	padding: 20px 25px;
+	margin: 30px auto;
+	background-color: green;
+	border-radius: 6px;
+}
+
+.alertalready {
+	text-align: center;
+	color: white;
+	max-width: 600px;
+	padding: 20px 25px;
+	margin: 30px auto;
+	background-color: #1495ac;;
+	border-radius: 6px;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {
+	/**vide**/
+}
+
+
+/* POLICES*/
+@font-face {
+	font-family: 'road';
+	src: url('../src/road-rage.otf') format('truetype');
+}
+
+/*MEDIA*/
+@media all and (max-width: 900px) {
+
+	header {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	button {
+		padding: 20px;
+		margin: 20px;
+	}
+
+	#entete_left{
+		height: 0PX;
+	}
+
+	#formulaire {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.alertalready, .alerterror, .alertinvalid, .alertsuccess {
+		margin: 0px auto;
+	}
+
+
+}
